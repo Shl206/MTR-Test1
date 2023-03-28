@@ -21,8 +21,8 @@ p{
 /* Header */
 .hero {
   background-color: #ffffff;
-  border-bottom-right-radius: 5% 10%;
-  border-bottom-left-radius: 5% 10%;
+  border-bottom-right-radius: 10% 10%;
+  border-bottom-left-radius: 10% 10%;
   background-position: center;
   background-size: cover;
 }
@@ -88,10 +88,8 @@ figure{
   .right2{
     display: inline-block;
     vertical-align: top;
-    padding: auto;
     text-align: center;
-    
-  }
+  }s
   .left2{
     display: inline-block;
     vertical-align: top;
@@ -100,6 +98,9 @@ figure{
 @media only screen and (max-width: 368px) {
   .right2,
   .left2{
-    height: 140px;
+    height: 100px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bolder;
   }
 }
