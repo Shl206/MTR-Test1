@@ -1,0 +1,105 @@
+/* Global CSS variables */
+:root {
+  --spacing-company: 3rem;
+  --font-weight: 400;
+  --border-radius: 0;
+  background-color: #4e86ad;
+}
+/* Typography */
+h2,
+h3,
+p,
+hgroup > :last-child {
+  font-weight: 200;
+  color: #ffffff;
+}
+p{
+  margin-top: 50px;
+}
+
+
+/* Header */
+.hero {
+  background-color: #ffffff;
+  border-bottom-right-radius: 5% 10%;
+  border-bottom-left-radius: 5% 10%;
+  background-position: center;
+  background-size: cover;
+}
+
+.card1,
+.card2{
+  width: 130px;
+  height: 195px;
+  position: relative;
+  display: inline-block;
+}
+.card1 .img-top1,
+.card2 .img-top2{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.card1:hover .img-top1,
+.card2:hover .img-top2{
+  display: inline;
+}
+
+header {
+  padding: var(--spacing-company) 0;
+}
+
+header hgroup > :last-child {
+  color: var(--h3-color);
+}
+
+header hgroup {
+  margin-bottom: var(--spacing-company);
+}
+
+
+.left2,
+.right2{
+  border-radius: 50px;
+  display: inline-block;
+  text-align: center;
+  padding: 30px;
+  height: 100px;
+  width: 48%;
+  font-weight: bold;
+  font-size: 20px;
+
+}
+.right2{
+  color: #4e86ad;
+  background-color: #ffffff;
+  border: none;
+}
+figure{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+  .right2{
+    display: inline-block;
+    vertical-align: top;
+    padding: auto;
+    text-align: center;
+    
+  }
+  .left2{
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+@media only screen and (max-width: 368px) {
+  .right2,
+  .left2{
+    height: 140px;
+  }
+}
